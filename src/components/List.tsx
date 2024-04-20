@@ -3,9 +3,9 @@ import { GetCompaniesResponse } from "../utils/api";
 import { Params } from "./components.types";
 import { useState } from "react";
 
-type ListProps = { results: GetCompaniesResponse, onParamsChange: React.Dispatch<React.SetStateAction<Params>> }
+type ListProps = { results: GetCompaniesResponse, params: Params, onParamsChange: React.Dispatch<React.SetStateAction<Params>> }
 
-function List({ results, onParamsChange }: ListProps) {
+function List({ results, params, onParamsChange }: ListProps) {
     const [selected, setSelected] = useState<string>('1')
 
     const handleParamsChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -83,13 +83,19 @@ function List({ results, onParamsChange }: ListProps) {
             <div className="d-flex justify-content-center">
                 <nav aria-label="Page navigation example">
                     <ul className="pagination">
-                        {Array.from({ length: results.pages }, (_, i) => (
-                            <li className="page-item" key={i}>
-                                <button className="page-link" onClick={handlePaginationChange}>
-                                    {i + 1}
-                                </button>
-                            </li>
-                        ))}
+                        {Array.from({ length: results.pages }, (_, i) => {
+                            const pageNumber = i + 1;
+                            const isActive = params.page === pageNumber;
+                            const isDisabled = params.page === pageNumber;
+
+                            return (
+                                <li className={`page-item ${isActive ? 'active' : ''}`} key={i}>
+                                    <button className="page-link" disabled={isDisabled} onClick={handlePaginationChange}>
+                                        {pageNumber}
+                                    </button>
+                                </li>
+                            );
+                        })}
                     </ul>
                 </nav>
             </div>

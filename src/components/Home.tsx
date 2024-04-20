@@ -71,7 +71,7 @@ function Home() {
 
             <div className="row mt-5">
                 <div className="col">
-                    {!results ? <Placeholder search={params.search} error={error} /> : <List results={results} onParamsChange={setParams} />}
+                    {!results ? <Placeholder search={params.search} error={error} /> : <List results={results} params={params} onParamsChange={setParams} />}
                 </div>
             </div>
         </div>
