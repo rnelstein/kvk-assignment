@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://rnelstein.github.io/kvk-assignment/static/css/main.6be74069.css",
-    "main.js": "https://rnelstein.github.io/kvk-assignment/static/js/main.7ea53246.js",
+    "main.js": "https://rnelstein.github.io/kvk-assignment/static/js/main.e10f7fe6.js",
     "static/js/453.e6abf218.chunk.js": "https://rnelstein.github.io/kvk-assignment/static/js/453.e6abf218.chunk.js",
     "index.html": "https://rnelstein.github.io/kvk-assignment/index.html",
     "main.6be74069.css.map": "https://rnelstein.github.io/kvk-assignment/static/css/main.6be74069.css.map",
-    "main.7ea53246.js.map": "https://rnelstein.github.io/kvk-assignment/static/js/main.7ea53246.js.map",
+    "main.e10f7fe6.js.map": "https://rnelstein.github.io/kvk-assignment/static/js/main.e10f7fe6.js.map",
     "453.e6abf218.chunk.js.map": "https://rnelstein.github.io/kvk-assignment/static/js/453.e6abf218.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6be74069.css",
-    "static/js/main.7ea53246.js"
+    "static/js/main.e10f7fe6.js"
   ]
 }
