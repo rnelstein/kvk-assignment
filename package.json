@@ -2,7 +2,6 @@
   "name": "kvk-assignment",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rnelstein.github.io/kvk-assignment",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,6 +11,7 @@
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "bootstrap": "^5.3.3",
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.2.0",
@@ -20,10 +20,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build-prod",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "env-cmd -f ./.env.local react-scripts start",
+    "build": "env-cmd -f ./.env.local react-scripts build",
+    "start-prod": "env-cmd -f ./.env.production.local react-scripts start",
+    "build-prod": "env-cmd -f ./.env.production.local react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
