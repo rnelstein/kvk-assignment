@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kvk-assignment/static/css/main.6be74069.css",
-    "main.js": "/kvk-assignment/static/js/main.a1194f3d.js",
-    "static/js/453.e6abf218.chunk.js": "/kvk-assignment/static/js/453.e6abf218.chunk.js",
-    "index.html": "/kvk-assignment/index.html",
-    "main.6be74069.css.map": "/kvk-assignment/static/css/main.6be74069.css.map",
-    "main.a1194f3d.js.map": "/kvk-assignment/static/js/main.a1194f3d.js.map",
-    "453.e6abf218.chunk.js.map": "/kvk-assignment/static/js/453.e6abf218.chunk.js.map"
+    "main.css": "https://rnelstein.github.io/kvk-assignment/static/css/main.6be74069.css",
+    "main.js": "https://rnelstein.github.io/kvk-assignment/static/js/main.8b464b74.js",
+    "static/js/453.e6abf218.chunk.js": "https://rnelstein.github.io/kvk-assignment/static/js/453.e6abf218.chunk.js",
+    "index.html": "https://rnelstein.github.io/kvk-assignment/index.html",
+    "main.6be74069.css.map": "https://rnelstein.github.io/kvk-assignment/static/css/main.6be74069.css.map",
+    "main.8b464b74.js.map": "https://rnelstein.github.io/kvk-assignment/static/js/main.8b464b74.js.map",
+    "453.e6abf218.chunk.js.map": "https://rnelstein.github.io/kvk-assignment/static/js/453.e6abf218.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6be74069.css",
-    "static/js/main.a1194f3d.js"
+    "static/js/main.8b464b74.js"
   ]
 }
